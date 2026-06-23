@@ -8,7 +8,7 @@ services:
       - .:/var/www/html
     environment:
       - DB_HOST=db
-      - DB_USER=foodz_user
+      - DB_USERNAME=foodz_user
       - DB_PASSWORD=foodz_password
       - DB_NAME=foodz_db
     depends_on:
@@ -24,7 +24,7 @@ services:
       MYSQL_DATABASE: foodz_db
       MYSQL_USER: foodz_user
       MYSQL_PASSWORD: foodz_password
-      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_ROOT_PASSWORD: rootpassword
     volumes:
       - db_data:/var/lib/mysql
 
