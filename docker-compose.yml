@@ -25,7 +25,7 @@ services:
       MYSQL_USER: foodz_user
       MYSQL_PASSWORD: foodz_password
       MYSQL_ROOT_PASSWORD: rootpassword
-      volumes:
+    volumes:
       - db_data:/var/lib/mysql
 
 volumes:
